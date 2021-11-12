@@ -8,6 +8,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>发起事项</title>
+    <script type="text/javascript">
+		function changeValue(){
+			if(document.getElementById("enter").innerHTML == "允许出校")
+				document.getElementById("enter").innerHTML = "允许入校"
+			else
+				document.getElementById("enter").innerHTML = "允许出校"
+		}
+	</script>
     <style>
         * {
             border: 0;
@@ -288,7 +296,7 @@
     </script>
     <div style="height: 10px;"></div>
     <div class="gengduo">
-        <button>更多</button>
+        <button onclick="changeValue()">更多</button>
     </div>
 </body>
 
